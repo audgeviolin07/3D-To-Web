@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Add some basic styling for the text box */
+      #text-box {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+        pointer-events: none; /* Make sure the text box doesn't interfere with mouse events */
+      }
+    </style>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <canvas id="webgl"></canvas>
+    <!-- Add a div for the text box -->
+    <div id="text-box">Happy Birthday Clara Jie.
+      I hope you have a delightful birthday
+    </div>
+    
+    <script type="module" src="/three.js"></script>
+  </body>
+</html>
