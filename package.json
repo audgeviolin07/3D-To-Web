@@ -1,6 +1,6 @@
 {
   "name": "3dpea",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
