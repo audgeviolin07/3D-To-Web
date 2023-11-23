@@ -20,6 +20,15 @@ loader.load('3dpea.glb', function (gltf) {
   scene.add(gltf.scene);
 });
 
+loader.load('poly.glb', function (gltf) {
+	const polyModel = gltf.scene;
+	scene.add(polyModel);
+	polyModel.scale.set(100, 100, 100);
+
+	// Move the poly model to the right
+	polyModel.position.x = 305;
+  });
+
 const light1 = new THREE.PointLight(0xffffff, 20, 100);
 light1.position.set(50, 30, 50);
 scene.add(light1);
